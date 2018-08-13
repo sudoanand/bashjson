@@ -25,6 +25,7 @@ Let's consider this exmaple json to be read using a bash script;
 	"author":"hack4mer",
 	"supported_os":{
 		"osx":{
+		    "foo":"bar",
 			"min_version" : 10.12,
 			"tested_on" : [10.1,10.13]
 		},
@@ -37,11 +38,16 @@ Let's consider this exmaple json to be read using a bash script;
 ```
 And Let's assume this data is in the same directory as our script in a file named `tool.json`
 
-**Prints : Test Tool**  
-`sh bashjson tool.json name`
+**Then, following will be the way to call this function:**
 
-**Prints : [10.1,10.13]**
-`sh bashjson tool.json supported_os osx tested_on`
+ `sh bashjson tool.json name`
+ Prints: Test Tool 
+ 
+ `sh bashjson tool.json supported_os osx food`
+ Prints: bar
+ 
+ `sh bashjson tool.json supported_os osx tested_on`
+ Prints: [10.1,10.13]
 
 ### Todos
 
