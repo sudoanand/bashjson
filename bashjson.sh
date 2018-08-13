@@ -1,6 +1,6 @@
 #!/bin/bash
 bashJson(){
-	python readJSon.py "$@"
+	python readJson.py "$@"
 }
 
 
