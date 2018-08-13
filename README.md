@@ -7,6 +7,7 @@ A real-life/useful use of this code will be inside another bash script trying to
 - Clone the repo in any directory on your system: `git clone https://github.com/hack4mer/bashjson.git`
 - Make the script executable: `chmod +x bashjson.sh`
 - Run the following command to extract the key "name" from `test.json`
+
      ```
      ./bashjson.sh test.json name
      ```
@@ -24,8 +25,8 @@ Let's consider this exmaple json data from the file `test.json` included in this
 	"supported_os":{
 		"osx":{
 		    "foo":"bar",
-			"min_version" : 10.12,
-			"tested_on" : [10.1,10.13]
+		    "min_version" : 10.12,
+		    "tested_on" : [10.1,10.13]
 		},
 		"ubuntu":{
 			"min_version":14.04,
