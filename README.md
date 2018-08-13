@@ -4,16 +4,14 @@ BashJson is very simple bash function to read values from json files in bash scr
 ## Usage
 A real-life/useful use of this code will be inside another bash script trying to read  values from complex JSON data. However, it can be used independently from any UNIX terminal.
 
-- Clone the repo in any directory on your system
-- Make the script executable by running the following command
-    ```
-    chmod +x bashjson.sh
-    ```
-- Now run the following command to extract values from your json file
+- Clone the repo in any directory on your system: `git clone https://github.com/hack4mer/bashjson.git`
+- Make the script executable: `chmod +x bashjson.sh`
+- Run the following command to extract the key "name" from `test.json`
      ```
-     sh bashjson.h json_file source key1 key2 ....
+     ./bashjson.sh test.json name
      ```
-Please note that the script takes at least 2 arguements. First one is the source of the json file and rest are the keys to be extracted.
+Please note that the script takes at least 2 arguements. 
+First one is the source of the json file and rest are the keys to be extracted.
 
 If you pass multiple keys, make sure that they follow the hierarchy in the json data. See the example below
 
