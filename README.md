@@ -18,7 +18,7 @@ Please note that the script takes at least 2 arguements. First one is the source
 If you pass multiple keys, make sure that they follow the hierarchy in the json data. See the example below
 
 ## Example
-Let's consider this exmaple json to be read using a bash script;
+Let's consider this exmaple json data from the file `test.json` included in this project
 ```
 {
 	"name":"Test tool",
@@ -36,20 +36,18 @@ Let's consider this exmaple json to be read using a bash script;
 	}
 }
 ```
-And Let's assume this data is in the same directory as our script in a file named `tool.json`
+**Following commands read data from this example json file**
 
-**Then, following will be the way to call this function:**
-
- `sh bashjson tool.json name`
- Prints: Test Tool 
+ `./bashjson.sh test.json name`
+ > Prints: Test Tool 
  
- `sh bashjson tool.json supported_os osx food`
- Prints: bar
+ `./bashjson.sh test.json supported_os osx foo`
+ > Prints: bar
  
- `sh bashjson tool.json supported_os osx tested_on`
- Prints: [10.1,10.13]
+ `./bashjson.sh test.json supported_os osx tested_on`
+> Prints: [10.1,10.13]
 
-### Todos
+### Todo
 
 - [ ] Add support to return array keys directly
 - [ ] Read json from variable
