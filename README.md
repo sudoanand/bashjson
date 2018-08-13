@@ -51,8 +51,8 @@ And Let's assume this data is in the same directory as our script in a file name
 
 ### Todos
 
-- [] Add support to return array keys directly
-- [] Read json from variable
+- [ ] Add support to return array keys directly
+- [ ] Read json from variable
 
 
 
