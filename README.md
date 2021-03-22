@@ -1,5 +1,5 @@
 # BashJson
-BashJson is very simple bash function to read values from json files in bash scripts, it simply wraps over Python's json module.
+BashJson is a bash function to read values from json files in bash scripts, it simply wraps over Python's json module.
 
 ## Usage
 A real-life/useful use of this code will be inside another bash script trying to read  values from complex JSON data. However, it can be used independently from any UNIX terminal.
